@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travel.Easy.Electric.Vehicles.Automation.Common", "Travel.Easy.Electric.Vehicles.Automation.Common\Travel.Easy.Electric.Vehicles.Automation.Common.csproj", "{85213D79-1880-434E-972F-0E6BCDD9A192}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travel.Easy.Electric.Vehicles.Automation.API.Tests", "Travel.Easy.Electric.Vehicles.Automation.API.Tests\Travel.Easy.Electric.Vehicles.Automation.API.Tests.csproj", "{786BE87E-2B61-4900-B06B-ED8D98A3B352}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travel.Easy.Electric.Vehicles.Automation.DataSetup", "Travel.Easy.Electric.Vehicles.Automation.DataSetup\Travel.Easy.Electric.Vehicles.Automation.DataSetup.csproj", "{03E9A675-26F8-43B5-AB8D-05AF7D4CB325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travel.Easy.Electric.Vehicles.Automation.Facades", "Travel.Easy.Electric.Vehicles.Automation.Facades\Travel.Easy.Electric.Vehicles.Automation.Facades.csproj", "{089B49F2-3F40-45C4-BA4B-89B8554E449E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travel.Easy.Electric.Vehicles.Automation.UI.Tests", "Travel.Easy.Electric.Vehicles.Automation.UI.Tests\Travel.Easy.Electric.Vehicles.Automation.UI.Tests.csproj", "{BB1B648B-954B-43C9-8DFB-3BA1DEA64A1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85213D79-1880-434E-972F-0E6BCDD9A192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85213D79-1880-434E-972F-0E6BCDD9A192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85213D79-1880-434E-972F-0E6BCDD9A192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85213D79-1880-434E-972F-0E6BCDD9A192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{786BE87E-2B61-4900-B06B-ED8D98A3B352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786BE87E-2B61-4900-B06B-ED8D98A3B352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786BE87E-2B61-4900-B06B-ED8D98A3B352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786BE87E-2B61-4900-B06B-ED8D98A3B352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03E9A675-26F8-43B5-AB8D-05AF7D4CB325}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03E9A675-26F8-43B5-AB8D-05AF7D4CB325}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03E9A675-26F8-43B5-AB8D-05AF7D4CB325}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03E9A675-26F8-43B5-AB8D-05AF7D4CB325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089B49F2-3F40-45C4-BA4B-89B8554E449E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089B49F2-3F40-45C4-BA4B-89B8554E449E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089B49F2-3F40-45C4-BA4B-89B8554E449E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089B49F2-3F40-45C4-BA4B-89B8554E449E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB1B648B-954B-43C9-8DFB-3BA1DEA64A1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB1B648B-954B-43C9-8DFB-3BA1DEA64A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB1B648B-954B-43C9-8DFB-3BA1DEA64A1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB1B648B-954B-43C9-8DFB-3BA1DEA64A1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6923B99-DB32-43EC-85B4-760BA1DB342E}
+	EndGlobalSection
+EndGlobal
