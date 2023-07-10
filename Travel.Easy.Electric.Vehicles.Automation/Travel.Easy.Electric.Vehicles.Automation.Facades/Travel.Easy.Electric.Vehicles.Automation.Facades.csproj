@@ -3,6 +3,15 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Configurations>Debug;Release;QAI</Configurations>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TravelEasy.ElectricVehicles.DB.Models" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Travel.Easy.Electric.Vehicles.Automation.Common\Travel.Easy.Electric.Vehicles.Automation.Common.csproj" />
+  </ItemGroup>
 
 </Project>

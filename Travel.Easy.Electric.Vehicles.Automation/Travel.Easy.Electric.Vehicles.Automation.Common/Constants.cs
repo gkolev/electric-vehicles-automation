@@ -4,7 +4,6 @@
     {
         public static class Endpoints
         {
-
         }
 
         public static class Data

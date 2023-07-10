@@ -1,0 +1,18 @@
+{
+  "bindingCulture": {
+    "language": "en-us"
+  },
+
+  "language": {
+    "feature": "en-us"
+  },
+
+  "stepAssemblies": [
+    {
+      "assembly": "Travel.Easy.Electric.Vehicles.Automation.DataSetup"
+    },
+    {
+      "assembly": "Travel.Easy.Electric.Vehicles.Automation.Facades"
+    }
+  ]
+}
