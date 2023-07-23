@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,12 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="BeforeScenarios\" />
-    <Folder Include="AfterScenarios\" />
+    <Content Remove="C:\Users\gkolev\.nuget\packages\traveleasy.ev.api\1.0.0\contentFiles\any\net6.0\appsettings.Development.json" />
+    <Content Remove="C:\Users\gkolev\.nuget\packages\traveleasy.ev.api\1.0.0\contentFiles\any\net6.0\appsettings.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="TravelEasy.ElectricVehicles.DB.Models" Version="1.0.0" />
+    <PackageReference Include="SpecFlow" Version="3.9.74" />
+    <PackageReference Include="TravelEasy.EV.API" Version="1.0.0" />
+    <PackageReference Include="TravelEasy.EV.DataLayer" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Travel.Easy.Electric.Vehicles.Automation.Common\Travel.Easy.Electric.Vehicles.Automation.Common.csproj" />
   </ItemGroup>
 
 </Project>

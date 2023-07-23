@@ -7,4 +7,9 @@
     <Configurations>Debug;Release;QAI</Configurations>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="TravelEasy.EV.API" Version="1.0.0" />
+    <PackageReference Include="TravelEasy.EV.DataLayer" Version="1.0.0" />
+  </ItemGroup>
+
 </Project>

@@ -7,10 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="C:\Users\gkolev\.nuget\packages\traveleasy.ev.api\1.0.0\contentFiles\any\net6.0\appsettings.Development.json" />
+    <Content Remove="C:\Users\gkolev\.nuget\packages\traveleasy.ev.api\1.0.0\contentFiles\any\net6.0\appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4" />
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="Polly" Version="7.2.4" />
+    <PackageReference Include="TravelEasy.EV.API" Version="1.0.0" />
+    <PackageReference Include="TravelEasy.EV.DataLayer" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
