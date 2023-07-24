@@ -117,6 +117,12 @@ namespace Travel.Easy.Electric.Vehicles.Automation.API.Tests.Definitions
             int actualStatusCode = (int)response.StatusCode;
             int expectedStatusCode = statusCode;
 
+            if (!response.IsSuccessStatusCode)
+            {
+                var content = response.Content.ReadAsStringAsync().Result;
+                TestContext.WriteLine(content);
+            }
+
             Assert.AreEqual(expectedStatusCode, actualStatusCode, "Response status code is incorrect");
         }
     }

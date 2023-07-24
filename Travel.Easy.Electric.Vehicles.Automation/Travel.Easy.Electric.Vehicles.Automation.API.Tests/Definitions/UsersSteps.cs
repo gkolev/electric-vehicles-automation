@@ -1,8 +1,10 @@
-﻿using TechTalk.SpecFlow;
+﻿using NUnit.Framework;
+using TechTalk.SpecFlow;
 using Travel.Easy.Electric.Vehicles.Automation.Common;
 using Travel.Easy.Electric.Vehicles.Automation.Facades;
 using TravelEasy.ElectricVehicles.DB.Models;
 using TravelEasy.EV.API.Models.UserModels;
+using TravelEasy.EV.DataLayer;
 
 namespace Travel.Easy.Electric.Vehicles.Automation.API.Tests.Definitions
 {
@@ -11,11 +13,13 @@ namespace Travel.Easy.Electric.Vehicles.Automation.API.Tests.Definitions
     {
         private readonly UsersFacade _usersFacade;
         private readonly ScenarioContext _scenarioContext;
+        private readonly ElectricVehiclesContext _dbContext;
 
-        public UsersSteps(UsersFacade usersFacade, ScenarioContext scenarioContext)
+        public UsersSteps(UsersFacade usersFacade, ScenarioContext scenarioContext, ElectricVehiclesContext dbContext)
         {
             _usersFacade = usersFacade;
             _scenarioContext = scenarioContext;
+            _dbContext = dbContext;
         }
 
         [StepDefinition(@"GetUser endpoint is requested")]
@@ -65,6 +69,16 @@ namespace Travel.Easy.Electric.Vehicles.Automation.API.Tests.Definitions
             var user = _scenarioContext.Get<UserLoginRequestModel>(Constants.Data.UserLoginRequestModel);
             var response = _usersFacade.PostLoginUser(user);
             _scenarioContext.Set(response, Constants.Data.Response);
+        }
+
+        [StepDefinition(@"User should be correctly added into db")]
+        public void UserShouldBeCorrectlyAddedIntoDb()
+        {
+            var user = _scenarioContext.Get<UserRegisterRequestModel>(Constants.Data.UserRegisterRequestModel);
+            var dbUser = _dbContext.Users.FirstOrDefault(x => x.Username == user.Username);
+
+            Assert.AreEqual(user.Email, dbUser.Email, "Wrong Email");
+            Assert.AreEqual(user.Password, dbUser.Password, "Wrong Password");
         }
     }
 }
